@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Single-file Website — Clean Starter</title>
+  <meta name="description" content="A modern single-file HTML/CSS/JS starter with responsive layout, theme toggle, simple animations and a contact form." />
+
+  <link rel="stylesheet" href="web1style.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>SW</div>
+        <div>
+          <div>Starter Website</div>
+          <div class="small muted">Single-file HTML/CSS/JS</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="ghost" aria-pressed="false">Toggle theme</button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-left">
+        <h1>Fast, accessible, single-file website starter</h1>
+        <p class="muted">A compact template with responsive layout, theme toggle, small animations, and a contact form — great as a landing page or prototype.</p>
+
+        <div class="card features" id="features">
+          <div class="feature">
+            <div class="icon">⚡</div>
+            <div>
+              <div style="font-weight:700">Zero-build</div>
+              <div class="small muted">Open the file and edit — no build tools required.</div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🔒</div>
+            <div>
+              <div style="font-weight:700">Privacy-friendly</div>
+              <div class="small muted">No analytics or third-party trackers included.</div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🎨</div>
+            <div>
+              <div style="font-weight:700">Customizable</div>
+              <div class="small muted">Change colors, fonts, layout easily in one file.</div>
+            </div>
+          </div>
+
+          <div class="cta">
+            <button class="btn" id="downloadBtn">Download HTML</button>
+            <button class="ghost" id="copyBtn">Copy to clipboard</button>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin:0 0 6px">Quick start</h3>
+          <div class="small muted">Save this file as <code>index.html</code> and open it in a browser. Edit the content where you like.</div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="card preview" id="demo">Live preview area</div>
+
+        <div class="card" id="contact">
+          <h4 style="margin:0 0 6px">Contact</h4>
+          <form id="contactForm">
+            <input id="name" placeholder="Your name" required/>
+            <input id="email" type="email" placeholder="Email" required/>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+              <button class="btn" type="submit">Send message</button>
+              <div class="small muted">No backend — message will be simulated.</div>
+            </div>
+          </form>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div class="muted">Made with ♥ — edit and reuse.</div>
+      <div class="muted">v1.0</div>
+    </footer>
+  </div>
+
+  <script src="web1script.js"></script>
+</body>
+</html>
+
+
+
+
